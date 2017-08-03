@@ -1,0 +1,20 @@
+#make sure there are no problems if there are no facts.
+
+Schemes:
+  scheme(more,stuff)
+  flyTo(who,where)
+  isfather(F,S)
+  inLove(A,B)
+
+Facts:
+
+Rules:
+
+Queries:
+  scheme(who,'ball')?
+  flyTo('Collin',Where)?
+  scheme(X,Y)?
+  scheme('amore','ball')?
+  isfather(WhoIs,'kyle')?
+  isfather('kirk',Children)?
+  inLove(me,me)?

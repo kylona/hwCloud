@@ -1,0 +1,4 @@
+Schemes populated after 2 passes through the Rules.
+A(a,b,c)? Yes(2)
+  a='a', b='b', c='c'
+  a='c', b='b', c='a'

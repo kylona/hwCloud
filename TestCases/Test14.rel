@@ -1,0 +1,13 @@
+#Tests expressions. Strings and strings can be added or IDs and IDs
+Schemes:
+  eatsCheese(Name,Type)
+
+Facts:
+  eatsCheese('kyle','cheddar').
+  eatsCheese('kyle','string').
+  eatsCheese('nate','sliced cheddar').
+
+Rules:
+
+Queries:
+  eatsCheese(((who+Eats)+SlicedCheddar),('sliced'+' cheddar'))?

@@ -1,0 +1,17 @@
+Schemes:
+
+  asche(A,B,C,D)
+
+
+Facts:
+
+  asche('1','2','1','1').
+  asche('2','2','1','1').
+  asche('2','1','2','1').
+  asche('2','2','2','1').
+
+Rules:
+
+Queries:
+
+  asche(p,p,'1',q)?

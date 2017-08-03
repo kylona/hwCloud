@@ -1,0 +1,4 @@
+Schemes populated after 2 passes through the Rules.
+HasSameAddress('Snoopy',Who)? Yes(2)
+  Who='C. Brown'
+  Who='Snoopy'

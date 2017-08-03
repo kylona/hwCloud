@@ -1,0 +1,19 @@
+#Test for id rotation effect of scheme
+
+Schemes:
+
+  A(a,b,c)
+
+Facts:
+
+  A('a','b','c').
+
+
+Rules:
+
+  A(c,a,b) :- A(a,b,c).
+
+
+Queries:
+
+  A(a,b,c)?

@@ -1,0 +1,24 @@
+#Test for 2 common items in schema
+
+Schemes:
+
+  A(a,b,c)
+  B(a,b)
+  AB(a,b,c)
+
+Facts:
+
+  A('a','B','C').
+  B('B','C').
+  B('no match','d').
+
+
+Rules:
+
+  AB(e,f,g) :- A(e,f,g), B(f,g).
+
+Queries:
+
+  A(e,f,g)?
+  B(f,g)?
+  AB(a,b,c)?

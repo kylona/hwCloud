@@ -1,0 +1,25 @@
+#Test for all items common in schema
+
+Schemes:
+
+  A(a,b,c,d,e)
+  B(a,b,c,d,e)
+  AB(a,b,c,d,e)
+
+Facts:
+
+  A('a','b','c','d','e').
+  B('a','b','c','d','f').
+  B('a','b','c','d','e').
+  A('e','d','c','b','a').
+  B('c','d','e','f','g').
+
+Rules:
+
+  AB(a,b,c,d,e) :- A(a,b,c,d,e), A(a,b,c,d,e).
+
+Queries:
+
+  A(a,b,c,d,e)?
+  B(a,b,c,d,e)?
+  AB(a,b,c,d,e)?

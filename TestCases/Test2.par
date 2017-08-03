@@ -1,0 +1,30 @@
+#almost same data as first but ensures the lexer is solid
+Schemes:
+  snap(S,
+  N,
+  A,
+  P#|comment in an akward spot| #not end of comment|#)
+
+#comment
+
+  HasSameAddress  (   X ,
+  Y
+
+  )
+
+Facts
+: #comment
+  snap('12345','C.#no comment Brown','12 Apple','555-1234').
+  snap('33333',',.?()::-*+Schemes Facts Rules Queries ANYTHING #line comment in string
+  #| block comment in string |# don''t leave the string here' ,
+  ''#|theEmptyString|#,'555-1234').
+
+Rules:
+  HasSameAddress#ugly comment here
+  (ThisVeryWellMayBeTheLongestIdIHaveEverSeen1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+  ,Y) :-#|more akward comments|# snap(A,X,B,C),snap(D,Y,B,E).
+
+#comment
+a
+Queries:
+  HasSameAddress('Snoopy',Who)?

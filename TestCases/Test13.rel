@@ -1,0 +1,14 @@
+#Tests if renaming to names allready in schema messes it up.
+
+Schemes:
+  eatsCheese(Name,Type)
+
+Facts:
+  eatsCheese('kyle','cheddar').
+  eatsCheese('kyle','string').
+  eatsCheese('nate','sliced cheddar').
+
+Rules:
+
+Queries:
+  eatsCheese(Type,Name)?

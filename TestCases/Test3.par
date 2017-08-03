@@ -1,0 +1,58 @@
+#attempt to test most lengthy replacements possible in the grammar.
+
+Schemes:
+  flot(flat,flet,flit,flot,flut,flyt,latf,letf,litf,lotf,lutf,lytf)
+  scheme(more)
+  amore(more)
+  emore(more)
+  imore(more)
+  omore(more)
+  umore(more)
+  ymore(more)
+  aeioumore(more)
+
+
+
+Facts:
+  fact('flot','','notflot','ninja','happy','flat','flit','flot','flut','flyt').
+  fact('notflot').
+  afact('more').
+  efact('more').
+  ifact('more').
+  ofact('more').
+  ufact('more').
+  yfact('more').
+  aefact('more').
+  iofact('more').
+  uyfact('more').
+
+
+
+Rules:
+  rule(flat,flet,flit,flot,flut,flyt,latf,letf,litf,lotf,lutf,lytf)
+  :-
+  flot(ID,'stuff',(id+id),(id*id),ID,'string',id,id).
+  flot(more) :- more(flot) , flot(more), more(flot), flot(more).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+  flot(more) :- more(flot).
+
+Queries:
+  question('string',ID,(expression+expression),'string','string','ninja')?
+  aquestion(more)?
+  equestion(more)?
+  iquestion(more)?
+  oquestion(more)?
+  uquestion(more)?
+  yquestion(more)?
+  aequestion(more)?
+  ioquestion(more)?
+  uyquestion(more)?
+  aeiquestion(more)?
+  ouyquestion(more)?

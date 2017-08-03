@@ -1,0 +1,21 @@
+#Test for complex concatination
+
+Schemes:
+
+  A(a,b,c)
+  B(a,b)
+  AB(a,b,c,d,e)
+
+Facts:
+
+  A('a','b','c').
+  B('d','e').
+
+Rules:
+
+  AB(a,b,c,d,e) :- A(c,e,a), B(d,b).
+
+
+Queries:
+
+  AB(a,b,c,d,e)?

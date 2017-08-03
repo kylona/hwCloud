@@ -1,0 +1,9 @@
+Schemes populated after 2 passes through the Rules.
+A(a,b,c,d,e)? Yes(2)
+  a='a', b='b', c='c', d='d', e='e'
+  a='e', b='d', c='c', d='b', e='a'
+B(a,b,c,d,e)? Yes(2)
+  a='a', b='b', c='c', d='d', e='f'
+  a='c', b='d', c='e', d='f', e='g'
+AB(a,b,c,d,e)? Yes(1)
+  a='a', b='b', c='c', d='d', e='e'

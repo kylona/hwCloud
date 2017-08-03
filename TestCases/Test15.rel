@@ -1,0 +1,37 @@
+#attempt to test most lengthy replacements possible in the grammar.
+#this was an old test that I kept. It throws "Query not defined in schema because question was not difined
+
+
+Schemes:
+  flot(flat,flet,flit,flot,flut,flyt,latf,letf,litf,lotf)
+  scheme(more)
+  amore(more)
+  emore(more)
+  imore(more)
+  omore(more)
+  umore(more)
+  ymore(more)
+  aeioumore(more)
+
+
+
+Facts:
+  flot('flot','','notflot','ninja','happy','flat','flit','flot','flut','flyt').
+
+
+
+Rules:
+
+Queries:
+  question('string',ID,(expression+expression),'string','string','ninja')?
+  aquestion(more)?
+  equestion(more)?
+  iquestion(more)?
+  oquestion(more)?
+  uquestion(more)?
+  yquestion(more)?
+  aequestion(more)?
+  ioquestion(more)?
+  uyquestion(more)?
+  aeiquestion(more)?
+  ouyquestion(more)?

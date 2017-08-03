@@ -1,0 +1,19 @@
+#Testing multiple of the same variable
+Schemes:
+
+  zoo(A,B,C,D,E)
+
+Facts:
+
+  zoo('Monkey','Zebra','Elephent','Lion','Cow').
+  zoo('Cat','Cat','Cat','Cat','Cat').
+
+Rules:
+
+
+Queries:
+
+  zoo(A,B,C,D,E)?
+  zoo(A,A,A,A,A)?
+  zoo(A,B,A,C,A)?
+  zoo(B,A,C,A,D)?

@@ -1,0 +1,23 @@
+#Test for one common item in schema
+
+Schemes:
+
+  A(a,b,c)
+  B(a,b)
+  AB(a,b,c,d)
+
+Facts:
+
+  A('a','b','This was the match').
+  B('This was the match','d').
+  B('no match','d').
+
+
+Rules:
+
+  AB(a,b,c,d) :- A(c,d,a), B(a,b).
+
+
+Queries:
+
+  AB(a,b,c,d,e)?

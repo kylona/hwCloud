@@ -1,0 +1,19 @@
+#testing variables or strings in several different index positions
+Schemes:
+
+  bingo(B,I,N,G,O)
+
+Facts:
+
+  bingo('Water.','Earth.','Fire.','Air.','Long').
+  bingo('ago,','the','four','nations','lived').
+  bingo('together','in','harmony,','but','then').
+  bingo('everything','changed','when the','fire nation','attacked!').
+
+Rules:
+
+Queries:
+
+  bingo(Katara,'Earth.',Zuko,'Air.','Long')?
+  bingo('Water.',Toph,'Fire.',Aang,Time)?
+  bingo((Korra+'stinker'),Kioshi,Roku,Aang,'attacked!')?

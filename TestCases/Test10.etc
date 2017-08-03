@@ -1,0 +1,21 @@
+#Test for one match and two needed values from two different rules.
+
+Schemes:
+
+  A(a,b,c)
+  B(a,b)
+  AB(a,b,c,d,e)
+
+Facts:
+
+  A('a','y','c').
+  B('x','c').
+
+Rules:
+
+  AB(a,x,y,c,a) :- A(a,y,c), B(x,c).
+
+
+Queries:
+
+  AB(a,b,c,d,e)?

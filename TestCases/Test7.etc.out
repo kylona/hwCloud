@@ -1,0 +1,8 @@
+Schemes populated after 2 passes through the Rules.
+A(e,f,g)? Yes(1)
+  e='a', f='B', g='C'
+B(f,g)? Yes(2)
+  f='B', g='C'
+  f='no match', g='d'
+AB(a,b,c)? Yes(1)
+  a='a', b='B', c='C'

@@ -1,0 +1,31 @@
+#Test if it properly supports several different schemas in arbetrary order
+Schemes:
+  scheme(more,stuff)
+  flyTo(who,where)
+  isfather(F,S)
+  inLove(A,B)
+
+Facts:
+  scheme('amore','ball').
+  scheme('amore','top').
+  scheme('cmore','red waggon').
+  flyTo('Collin','Moon').
+  isfather('kirk','kyle').
+  isfather('kirk','nate').
+  isfather('kirk','loren').
+  inLove('kirk','karyn').
+  inLove('karyn','kirk').
+  inLove('Tlow','ham').
+  inLove('ham','ham').
+
+
+Rules:
+
+Queries:
+  scheme(who,'ball')?
+  isfather(WhoIs,'kyle')?
+  flyTo('Collin',Where)?
+  scheme(X,Y)?
+  scheme('amore','ball')?
+  isfather('kirk',Children)?
+  inLove(me,me)?

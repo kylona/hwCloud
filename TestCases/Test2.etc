@@ -1,0 +1,19 @@
+#Test for "rename" of id in scheme
+
+Schemes:
+
+  A(a,b,c)
+
+Facts:
+
+  A('a','b','c').
+
+
+Rules:
+
+ A(c,b,a) :- A(a,b,c).
+
+
+Queries:
+
+  A(a,b,c)?

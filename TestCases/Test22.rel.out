@@ -1,0 +1,8 @@
+Schemes populated after 1 passes through the Rules.
+scheme(who,'ball')? No
+flyTo('Collin',Where)? No
+scheme(X,Y)? No
+scheme('amore','ball')? No
+isfather(WhoIs,'kyle')? No
+isfather('kirk',Children)? No
+inLove(me,me)? No
